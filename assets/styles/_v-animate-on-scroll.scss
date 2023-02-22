@@ -1,0 +1,19 @@
+.animate {
+  animation-name: show;
+  //animation-duration: 1.2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+
+  display: flex;
+  justify-content: center;
+}
+@keyframes show {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

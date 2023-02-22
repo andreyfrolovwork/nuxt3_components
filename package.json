@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "pre": "yarn build && yarn start",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-standard": "^8.0.1",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "nuxt": "3.0.0",
+    "prettier": "^2.8.3",
+    "unplugin-vue-components": "^0.21.1"
+  },
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
+    "@pinia/nuxt": "^0.4.6",
+    "@splidejs/vue-splide": "^0.6.12",
+    "@vueform/slider": "^2.1.7",
+    "ant-design-vue": "^3.2.15",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.29",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "swiper": "^9.0.5",
+    "vue-yandex-maps": "^0.12.3"
+  }
+}
