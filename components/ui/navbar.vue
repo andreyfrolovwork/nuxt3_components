@@ -115,12 +115,12 @@ function goToMain() {
     margin: 14px 0;
 }
 
-.logo {
+/*.logo {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
     ///margin-left: 15px;
-}
+}*/
 
 .navbar {
     //box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);

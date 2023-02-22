@@ -1,5 +1,4 @@
 <template>
-    <navbar-main />
     <div>
         <ex-menu />
         <ex-tabs />

@@ -1,19 +1,31 @@
 <template>
-    <ui-navbar :menu-links="menuLinks">
-        <template #logo>
-            <img
-                src="/logo-header.svg"
-                alt="logo"
-                class="logo"
-                >
-        </template>
-        <template #rightButtons>
-            <navbar-right-buttons />
-        </template>
-    </ui-navbar>
+    <div>
+        <ui-navbar :menu-links="menuLinks">
+            <template #logo>
+                <img
+                    src="/logo-header.svg"
+                    alt="logo"
+                    class="logo"
+                    @click="pushToMainPage"
+                    >
+            </template>
+            <template #rightButtons>
+                <navbar-right-buttons />
+            </template>
+        </ui-navbar>
+    </div>
 </template>
 
 <script setup>
+import { useRouter } from "nuxt/app"
+
+const router = useRouter()
+
+function pushToMainPage() {
+    router.push({
+        path: "/"
+    })
+}
 
 const menuLinks = [
     {
@@ -32,5 +44,7 @@ const menuLinks = [
 </script>
 
 <style scoped>
-
+.logo {
+    cursor: pointer;
+}
 </style>

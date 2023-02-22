@@ -6,9 +6,9 @@
         }"
         @click="setShow"
         >
-        <span />
-        <span />
-        <span />
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 </template>
 
@@ -16,14 +16,16 @@
 const emit = defineEmits(["showmenu"])
 
 import { ref } from "vue"
+
 const show = ref(false)
+
 function setShow() {
     emit("showmenu")
     show.value = !show.value
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Icon 1 */
 
 #nav-icon1,
@@ -35,7 +37,7 @@ function setShow() {
     width: 26px;
     height: 23px;
     position: relative;
-    //margin: 2px auto;
+    //margin: 2 px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -73,17 +75,17 @@ function setShow() {
 }
 
 #nav-icon1 span:nth-child(2) {
-    //top: 18px;
+//top: 18 px;
     top: 8px;
 }
 
 #nav-icon1 span:nth-child(3) {
-    //top: 36px;
+//top: 36 px;
     top: 16px;
 }
 
 #nav-icon1.open span:nth-child(1) {
-    //top: 18px;
+//top: 18 px;
     top: 8px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -97,7 +99,7 @@ function setShow() {
 }
 
 #nav-icon1.open span:nth-child(3) {
-    //top: 18px;
+//top: 18 px;
     top: 8px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
