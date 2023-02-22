@@ -3,7 +3,7 @@
         <div class="tab">
             <div class="tab_buttons">
                 <div
-                    v-for="(tab,i) in props.tabs"
+                    v-for="(tab, i) in props.tabs"
                     :key="i"
                     class="tab_buttons_but"
                     @click="setShow(i)"
@@ -19,11 +19,11 @@
         </div>
         <div>
             <div
-                v-for="(tab,i) in props.tabs"
+                v-for="(tab, i) in props.tabs"
                 :key="i"
                 >
-                <div v-if="show === (i)">
-                    <slot :name="'t'+ i" />
+                <div v-if="show === i">
+                    <slot :name="'t' + i" />
                 </div>
             </div>
         </div>
@@ -36,14 +36,14 @@ import { onMounted, ref } from "vue"
 const props = defineProps({
     tabs: {
         type: Array,
-        default: ["tab1"]
-    }
+        default: ["tab1"],
+    },
 })
 
 const track = ref(null)
 const show = ref(0)
 onMounted(() => {
-    const width = 100 / props.tabs.length + '%'
+    const width = 100 / props.tabs.length + "%"
     track.value.style.width = width
     console.log(width)
 })
@@ -68,7 +68,7 @@ function setShow(value) {
             //margin: 15px;
             width: 33.33%;
             text-align: center;
-            font-family: 'Montserrat', serif;
+            font-family: "Montserrat", serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -87,21 +87,19 @@ function setShow(value) {
 
     &_line {
         border-top: 1px solid black;
-
     }
 
     &_track {
         position: relative;
-        background: #1C6B72;
+        background: #1c6b72;
         height: 4px;
         width: 33%;
         left: 0;
         transition: all 300ms ease-in-out;
 
         &:hover {
-            left: 66%
+            left: 66%;
         }
     }
 }
-
 </style>

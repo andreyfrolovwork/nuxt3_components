@@ -23,19 +23,15 @@
     </div>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style lang="scss">
-
 .phone-icon {
-    user-select:none;
+    user-select: none;
     &:focus {
         animation-name: phone-call;
         animation-duration: 300ms;
         animation-iteration-count: 1;
-
     }
 }
 

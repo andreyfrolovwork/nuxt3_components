@@ -25,6 +25,18 @@ module.exports = {
         "vue/multi-word-component-names": "off",
         "vue/html-indent": ["error", 4, { attribute: 1, closeBracket: 1 }],
         "vue/require-prop-types": "off",
+        "vue/html-self-closing": [
+            "error",
+            {
+                html: {
+                    void: "never",
+                    normal: "never",
+                    component: "always",
+                },
+                svg: "always",
+                math: "always",
+            },
+        ],
     },
     extends: ["plugin:nuxt/recommended", "plugin:vue/vue3-recommended" /*, 'plugin:prettier/recommended'*/],
 }
