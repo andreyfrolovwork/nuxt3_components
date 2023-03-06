@@ -14,7 +14,8 @@
 
 </script>
 
-<style scoped >
-.zero {}
+<style scoped>
+.zero {
+}
 
 </style>
